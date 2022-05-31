@@ -1,0 +1,506 @@
+/* css common for all */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* ======================== */
+/* top header */
+/* ======================== */
+.topheader {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+.topheaderpart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.topheaderpart img {
+  height: 5rem;
+}
+
+/* Smartphones ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  .topheaderparttext {
+    display: none;
+  }
+}
+
+/* ============================== */
+/* bottom header with links */
+/* ============================== */
+.header-bottom {
+  background-color: #703c19;
+  font-size: 14px;
+}
+.navbrand {
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+/* Smartphones ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  .navbrand {
+    font-size: 18px;
+  }
+  .header-togglerbtn {
+    border: none;
+    font-size: 18px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-device-width: 1025px) {
+  .headerlinks li {
+    margin-right: 1rem;
+  }
+}
+
+/* =========================================== */
+/* connect with your batchmates section */
+/* =========================================== */
+
+.connectsection {
+  padding: 2rem;
+  text-align: center;
+  background: url("pattern.png");
+}
+.connectsection .registerbtn {
+  background-color: #703c19;
+  color: white;
+  margin-top: 1.4rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+/* Smartphones ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  .connectsection h2 {
+    font-size: 18px;
+  }
+  .connectsection h5 {
+    font-size: 14px;
+  }
+}
+
+/* ======================= */
+/* photo gallery options on home page */
+/* ======================= */
+
+.photogalleryoptionsdiv {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.photogalleryoption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 23%;
+
+  background-size: cover;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  color: white;
+  margin-bottom: 4%;
+}
+
+/* Smartphones ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+  .photogalleryoption {
+    padding: 2rem 1rem;
+    width: 48%;
+  }
+  .photogalleryoption h5 {
+    font-size: 14px;
+  }
+  .photogalleryoption h2 {
+    font-size: 1.3rem;
+  }
+}
+/* ======================= */
+/* photo gallery */
+/* ======================= */
+.portfolio-menu {
+  text-align: center;
+}
+.portfolio-menu ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all 0.5s ease;
+}
+
+.portfolio-item .item {
+  /*width:303px;*/
+  float: left;
+  margin-bottom: 10px;
+}
+
+/* ================== */
+/* Login page */
+/* ================== */
+
+.loginregisterformouter {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.loginregisterform {
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  width: 320px;
+  padding: 3rem 1.2rem;
+}
+.loginregisterbtn {
+  margin-top: 2rem;
+  text-align: center;
+}
+.loginregisterbtn button {
+  width: 100%;
+  color: white;
+  background-color: #703c19;
+  font-size: 14px;
+}
+.loginorregisterlink{
+  text-align: center;
+}
+.loginorregisterlink a{
+  color: #703c19;
+  text-decoration: underline #703c19;
+  font-size: 13px;
+}
+
+/* =================== */
+/* user profile page */
+/* =================== */
+/* .profpic{
+  display: flex;
+  justify-content: center;
+}
+.profinitials{
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.userprofilediv{
+  width: 96%;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.userprofileformsection{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px dotted lightgrey;
+}
+.userprofileformsection h6{
+  color: #703c19;
+  font-weight: 550;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+/* =============================== */
+/* posts page */
+/* =============================== */
+
+.addpostbtn{
+  width: 96%;
+  margin: 2%;
+
+}
+.addpostbtn button{
+  border: 2px solid #703c19;
+  color: #703c19;
+  font-weight: 550;
+  text-transform: uppercase;
+}
+.addpostbtn button:hover{
+  background-color: #703c19;
+  color: white;
+}
+
+.allpostsdiv{
+  display: flex;
+  flex-wrap: wrap;
+  width: 98%;
+  margin: 1%;
+  justify-content: space-between;
+  
+}
+.singlepostcard{
+  width: 48%;
+  margin: 1%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: aqua;
+}
+
+/* Smartphones and ipad, tabs----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 1024px) {
+  .singlepostcard{
+    width: 98%;
+  }
+}
+
+
+/* footer */
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background: #703c19;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #fff;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #fff;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.google-bg{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: rgb(230, 230, 230);
+}
+.footer-widget ul li a {
+color: #fff;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #f1f1f1;
+border: none;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #703c19;
+  color: #fff;
+  padding: 13px 20px;
+  border: 1px solid #fff;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color: #ff5e14;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #ff5e14;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+
+/* post cards */
+.verticalscrollforpostscont{
+  height: 100vh;
+  overflow-y: scroll;
+}
+.postcardscont{
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.postcarditem{
+  padding: 0.8rem;
+  width: 23%;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 11%);
+  display: inline;
+  margin: 1%;
+}
+.postcardpart1{
+  display: flex;
+  justify-content: space-between;
+}
+.postcarditem h4{
+  font-size: 16px;
+  font-weight: 550;
+  margin-bottom: 1.7rem;
+}
+.postcardpart1 p{
+  font-size: 13px;
+}
+.postcarddetailshead{
+  color: grey;
+}
+.postcardpostedby{
+  color: grey;
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+.postcardpart11{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.postcardfooter{
+  text-align: right;
+}
+.postcardfooter button{
+  background-color: #703c19;
+  color: white;
+}
+
+/* Smartphones ----------- */
+@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+}
+
+/* iPads, tabs ----------- */
+@media only screen and (min-device-width: 501px) and (max-device-width: 1024px) {
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-device-width: 1025px) {
+}
